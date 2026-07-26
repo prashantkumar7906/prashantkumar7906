@@ -3,7 +3,7 @@ name: Generate Snake
 on:
   # Run automatically every 24 hours
   schedule:
-    - cron: "0 0 * * *" 
+    - cron: "0 0 * * *"
   
   # Allows manual triggers via the Actions tab
   workflow_dispatch:
@@ -11,32 +11,31 @@ on:
   # Run on every push to the main branch
   push:
     branches:
-    - main
+      - main
 
 jobs:
   generate:
-    permissions: 
-      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     
     steps:
-      - name: checkout
+      # Checkout the repository so the deploy step can access it
+      - name: Checkout
         uses: actions/checkout@v3
 
-      # Generates a snake game from a github user's contributions graph, outputting SVG animations.
-      - name: generate github-contribution-grid-snake.svg
-        uses: platane/snk/svg-only@v3
+      # Generates a snake game from a github user's contributions graph, outputting SVG animations
+      - name: Generate Snake
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: prashantkumar7906
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      # Push the generated SVGs to the 'output' branch (keeps main branch clean)
-      - name: push github-contribution-grid-snake.svg to the output branch
+      # Push the generated SVGs to the 'output' branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
