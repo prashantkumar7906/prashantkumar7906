@@ -29,8 +29,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_snake=%23FF8A3D&color_dots=%23ebedf0,%23FDE0D0,%23FDBA94,%23FB9057,%23FF8A3D
+            dist/github-contribution-grid-snake-dark.svg?color_snake=%23F6C667&color_dots=%23161b22,%232A1B15,%235A2F1D,%23A34F25,%23FF8A3D
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
