@@ -1,66 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#0E1525; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1120" />
-      <stop offset="100%" stop-color="#060913" />
+      <stop offset="0%" stop-color="#1A2438" />
+      <stop offset="100%" stop-color="#0E1525" />
     </linearGradient>
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.6"/>
-      <stop offset="30%" stop-color="#1e293b" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#FF8A3D" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFB347" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#F6C667" stop-opacity="0.2"/>
     </linearGradient>
-    <filter id="subtleGlow">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <filter id="blurGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
   <!-- Card Background -->
-  <rect x="1" y="1" width="398" height="218" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+  <rect x="1" y="1" width="398" height="218" rx="24" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
 
-  <!-- Ambient Glow in Top Right -->
-  <circle cx="360" cy="40" r="30" fill="#6366f1" fill-opacity="0.1" filter="url(#subtleGlow)" />
+  <!-- Subtle glow in top right -->
+  <circle cx="360" cy="40" r="25" fill="#FF8A3D" fill-opacity="0.06" filter="url(#blurGlow)" />
 
-  <!-- Project Icon (Folder) -->
-  <g transform="translate(24, 24)">
-    <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-1 12H5c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v9c0 .55-.45 1-1 1z" fill="#818cf8" />
+  <!-- Project Icon (Book Catalog / LMS) -->
+  <g transform="translate(24, 24)" fill="#FF8A3D">
+    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
   </g>
 
-  <!-- External Link Icon (Top Right) -->
-  <g transform="translate(352, 24)">
-    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="#475569" />
+  <!-- Status indicator -->
+  <g transform="translate(348, 24)">
+    <rect x="-80" y="0" width="85" height="20" rx="10" fill="#111827" stroke="#FF8A3D" stroke-opacity="0.2" />
+    <circle cx="-70" cy="10" r="3.5" fill="#FF8A3D" />
+    <text x="-60" y="13" font-size="9" font-weight="700" fill="#D8DEE9">SHOWCASE</text>
   </g>
 
   <!-- Title -->
-  <text x="24" y="80" font-size="18" font-weight="700" fill="#ffffff">Library Management System</text>
+  <text x="24" y="80" font-size="18" font-weight="700" fill="#FFFFFF">Library Management System</text>
 
   <!-- Description -->
-  <text x="24" y="106" font-size="12" font-weight="400" fill="#94a3b8" width="352">
-    <tspan x="24" dy="0">Enterprise platform managing digital catalogs, student</tspan>
+  <text x="24" y="105" font-size="12" font-weight="400" fill="#D8DEE9" width="352">
+    <tspan x="24" dy="0">Enterprise system managing catalogs, digital checkouts,</tspan>
     <tspan x="24" dy="16">subscriptions, and secure Razorpay payment gateways.</tspan>
   </text>
 
   <!-- Features list -->
-  <text x="24" y="146" font-size="11" font-weight="600" fill="#a5b4fc" letter-spacing="0.5">
-    ADMIN DASHBOARD • SUBSCRIPTIONS • PAYMENTS
-  </text>
+  <text x="24" y="146" font-size="10" font-weight="700" fill="#FFB347" letter-spacing="0.5">ADMIN DASHBOARD • SUBSCRIPTIONS • PAYMENTS</text>
 
-  <!-- Tech Stack Badges -->
-  <g transform="translate(24, 168)">
-    <!-- Tag 1: React -->
-    <rect x="0" y="0" width="58" height="22" rx="6" fill="#1e1b4b" stroke="#312e81" stroke-width="1" />
-    <text x="29" y="14" font-size="10" font-weight="600" fill="#818cf8" text-anchor="middle">React</text>
+  <!-- Tech pills -->
+  <g transform="translate(24, 166)">
+    <rect x="0" y="0" width="58" height="24" rx="8" fill="#2A1B15" stroke="#FF8A3D" stroke-opacity="0.3" stroke-width="1" />
+    <text x="29" y="15" font-size="10" font-weight="700" fill="#FF8A3D" text-anchor="middle">React</text>
+    
+    <rect x="66" y="0" width="66" height="24" rx="8" fill="#2A2115" stroke="#FFB347" stroke-opacity="0.3" stroke-width="1" />
+    <text x="99" y="15" font-size="10" font-weight="700" fill="#FFB347" text-anchor="middle">Laravel</text>
 
-    <!-- Tag 2: Laravel -->
-    <rect x="64" y="0" width="64" height="22" rx="6" fill="#450a0a" stroke="#7f1d1d" stroke-width="1" />
-    <text x="96" y="14" font-size="10" font-weight="600" fill="#f87171" text-anchor="middle">Laravel</text>
+    <rect x="140" y="0" width="60" height="24" rx="8" fill="#2A2515" stroke="#F6C667" stroke-opacity="0.3" stroke-width="1" />
+    <text x="170" y="15" font-size="10" font-weight="700" fill="#F6C667" text-anchor="middle">MySQL</text>
 
-    <!-- Tag 3: MySQL -->
-    <rect x="134" y="0" width="60" height="22" rx="6" fill="#062f4f" stroke="#0b3c5d" stroke-width="1" />
-    <text x="164" y="14" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">MySQL</text>
-
-    <!-- Tag 4: Razorpay -->
-    <rect x="200" y="0" width="70" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
-    <text x="235" y="14" font-size="10" font-weight="600" fill="#cbd5e1" text-anchor="middle">Razorpay</text>
+    <rect x="208" y="0" width="76" height="24" rx="8" fill="#212936" stroke="#475569" stroke-opacity="0.3" stroke-width="1" />
+    <text x="246" y="15" font-size="10" font-weight="700" fill="#E5E7EB" text-anchor="middle">Razorpay</text>
   </g>
 </svg>

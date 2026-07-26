@@ -1,66 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#0E1525; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1120" />
-      <stop offset="100%" stop-color="#060913" />
+      <stop offset="0%" stop-color="#1A2438" />
+      <stop offset="100%" stop-color="#0E1525" />
     </linearGradient>
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.6"/>
-      <stop offset="30%" stop-color="#1e293b" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#FF8A3D" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFB347" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#F6C667" stop-opacity="0.2"/>
     </linearGradient>
-    <filter id="subtleGlow">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <filter id="blurGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
   <!-- Card Background -->
-  <rect x="1" y="1" width="398" height="218" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+  <rect x="1" y="1" width="398" height="218" rx="24" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
 
-  <!-- Ambient Glow in Top Right -->
-  <circle cx="360" cy="40" r="30" fill="#ec4899" fill-opacity="0.08" filter="url(#subtleGlow)" />
+  <!-- Subtle glow in top right -->
+  <circle cx="360" cy="40" r="25" fill="#FF8A3D" fill-opacity="0.06" filter="url(#blurGlow)" />
 
-  <!-- Project Icon (Music / Audio) -->
-  <g transform="translate(24, 24)">
-    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" fill="#ec4899" />
+  <!-- Project Icon (Music Note / XHAudio) -->
+  <g transform="translate(24, 24)" fill="#FF8A3D">
+    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
   </g>
 
-  <!-- External Link Icon (Top Right) -->
-  <g transform="translate(352, 24)">
-    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="#475569" />
+  <!-- Status indicator -->
+  <g transform="translate(348, 24)">
+    <rect x="-80" y="0" width="85" height="20" rx="10" fill="#111827" stroke="#FF8A3D" stroke-opacity="0.2" />
+    <circle cx="-70" cy="10" r="3.5" fill="#FF8A3D" />
+    <text x="-60" y="13" font-size="9" font-weight="700" fill="#D8DEE9">SHOWCASE</text>
   </g>
 
   <!-- Title -->
-  <text x="24" y="80" font-size="18" font-weight="700" fill="#ffffff">XHAudio Music Player</text>
+  <text x="24" y="80" font-size="18" font-weight="700" fill="#FFFFFF">XHAudio Player</text>
 
   <!-- Description -->
-  <text x="24" y="106" font-size="12" font-weight="400" fill="#94a3b8" width="352">
-    <tspan x="24" dy="0">Lightweight, modern music player featuring rich audio</tspan>
-    <tspan x="24" dy="16">visualization, custom playlists, and a fully responsive layout.</tspan>
+  <text x="24" y="105" font-size="12" font-weight="400" fill="#D8DEE9" width="352">
+    <tspan x="24" dy="0">Lightweight desktop/mobile web music player featuring</tspan>
+    <tspan x="24" dy="16">rich visualizations, playlist controls, and modern UX.</tspan>
   </text>
 
   <!-- Features list -->
-  <text x="24" y="146" font-size="11" font-weight="600" fill="#fbcfe8" letter-spacing="0.5">
-    AUDIO VISUALIZER • PLAYLISTS • MODERN UI
-  </text>
+  <text x="24" y="146" font-size="10" font-weight="700" fill="#FFB347" letter-spacing="0.5">AUDIO VISUALIZER • PLAYLISTS • MODERN UI</text>
 
-  <!-- Tech Stack Badges -->
-  <g transform="translate(24, 168)">
-    <!-- Tag 1: JavaScript -->
-    <rect x="0" y="0" width="80" height="22" rx="6" fill="#422006" stroke="#713f12" stroke-width="1" />
-    <text x="40" y="14" font-size="10" font-weight="600" fill="#facc15" text-anchor="middle">JavaScript</text>
+  <!-- Tech pills -->
+  <g transform="translate(24, 166)">
+    <rect x="0" y="0" width="80" height="24" rx="8" fill="#2A1B15" stroke="#FF8A3D" stroke-opacity="0.3" stroke-width="1" />
+    <text x="40" y="15" font-size="10" font-weight="700" fill="#FF8A3D" text-anchor="middle">JavaScript</text>
+    
+    <rect x="88" y="0" width="88" height="24" rx="8" fill="#2A2115" stroke="#FFB347" stroke-opacity="0.3" stroke-width="1" />
+    <text x="132" y="15" font-size="10" font-weight="700" fill="#FFB347" text-anchor="middle">Tailwind CSS</text>
 
-    <!-- Tag 2: Tailwind CSS -->
-    <rect x="86" y="0" width="90" height="22" rx="6" fill="#083344" stroke="#155e75" stroke-width="1" />
-    <text x="131" y="14" font-size="10" font-weight="600" fill="#22d3ee" text-anchor="middle">Tailwind CSS</text>
+    <rect x="184" y="0" width="58" height="24" rx="8" fill="#2A2515" stroke="#F6C667" stroke-opacity="0.3" stroke-width="1" />
+    <text x="213" y="15" font-size="10" font-weight="700" fill="#F6C667" text-anchor="middle">HTML5</text>
 
-    <!-- Tag 3: HTML5 -->
-    <rect x="182" y="0" width="58" height="22" rx="6" fill="#431407" stroke="#7c2d12" stroke-width="1" />
-    <text x="211" y="14" font-size="10" font-weight="600" fill="#fb923c" text-anchor="middle">HTML5</text>
-
-    <!-- Tag 4: Web Audio -->
-    <rect x="246" y="0" width="86" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
-    <text x="289" y="14" font-size="10" font-weight="600" fill="#cbd5e1" text-anchor="middle">Web Audio</text>
+    <rect x="250" y="0" width="86" height="24" rx="8" fill="#212936" stroke="#475569" stroke-opacity="0.3" stroke-width="1" />
+    <text x="293" y="15" font-size="10" font-weight="700" fill="#E5E7EB" text-anchor="middle">Web Audio</text>
   </g>
 </svg>

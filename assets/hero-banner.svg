@@ -1,209 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640" width="1920" height="640" style="background:#020617; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 640" width="1920" height="640" style="background:#0E1525; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
     <!-- Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#02040a" />
-      <stop offset="40%" stop-color="#050b18" />
-      <stop offset="100%" stop-color="#0d1527" />
+      <stop offset="0%" stop-color="#090D18" />
+      <stop offset="50%" stop-color="#0E1525" />
+      <stop offset="100%" stop-color="#111827" />
     </linearGradient>
     
-    <!-- Warm Amber & Saffron Gradient -->
-    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />  <!-- Warm Amber -->
-      <stop offset="50%" stop-color="#f97316" /> <!-- Saffron/Orange -->
-      <stop offset="100%" stop-color="#ef4444" /> <!-- Coral/Red -->
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A3D" />   <!-- Primary Orange -->
+      <stop offset="50%" stop-color="#FFB347" />  <!-- Secondary Orange -->
+      <stop offset="100%" stop-color="#F6C667" /> <!-- Accent Saffron -->
     </linearGradient>
 
-    <!-- Glowing Tech Gradients -->
-    <linearGradient id="goldTechGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#f97316" stop-opacity="0.3" />
-    </linearGradient>
-
-    <linearGradient id="cyanTechGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.2" />
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01" />
     </linearGradient>
 
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.4" />
-      <stop offset="30%" stop-color="#38bdf8" stop-opacity="0.1" />
-      <stop offset="70%" stop-color="#1e293b" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#f97316" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#FF8A3D" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#F6C667" stop-opacity="0.3" />
     </linearGradient>
+
+    <!-- Ambient Glow Filters -->
+    <filter id="orangeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="90" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
 
     <!-- Text Gradients -->
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#fef08a" /> <!-- Soft golden sunlight -->
+      <stop offset="100%" stop-color="#F6C667" /> <!-- Soft golden sunlight -->
     </linearGradient>
-
-    <linearGradient id="subtitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#fbbf24" /> <!-- Amber -->
-      <stop offset="50%" stop-color="#f97316" /> <!-- Saffron -->
-      <stop offset="100%" stop-color="#38bdf8" /> <!-- Cyan highlight -->
-    </linearGradient>
-
-    <!-- Ambient Glow Filters -->
-    <filter id="goldenGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="80" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <filter id="blueGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="60" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-
-    <filter id="elementGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
 
-  <!-- Background Rect -->
+  <!-- Background -->
   <rect width="100%" height="100%" fill="url(#bgGrad)" />
 
-  <!-- Ambient Light Sources (Golden Hour + Tech Blue) -->
-  <circle cx="1600" cy="200" r="350" fill="#f57c00" fill-opacity="0.12" filter="url(#goldenGlow)" />
-  <circle cx="1300" cy="450" r="300" fill="#ffb300" fill-opacity="0.08" filter="url(#goldenGlow)" />
-  <circle cx="950" cy="250" r="280" fill="#00bcd4" fill-opacity="0.06" filter="url(#blueGlow)" />
-
-  <!-- Grid Pattern (Perspective/SaaS Landing Style) -->
-  <g stroke="#ffffff" stroke-opacity="0.015" stroke-width="1">
-    <path d="M 0,80 L 1920,80 M 0,160 L 1920,160 M 0,240 L 1920,240 M 0,320 L 1920,320 M 0,400 L 1920,400 M 0,480 L 1920,480 M 0,560 L 1920,560" />
-    <path d="M 160,0 L 160,640 M 320,0 L 320,640 M 480,0 L 480,640 M 640,0 L 640,640 M 800,0 L 800,640 M 960,0 L 960,640 M 1120,0 L 1120,640 M 1280,0 L 1280,640 M 1440,0 L 1440,640 M 1600,0 L 1600,640 M 1760,0 L 1760,640" />
+  <!-- Dotted Grid Pattern -->
+  <g fill="#ffffff" fill-opacity="0.015">
+    <circle cx="100" cy="100" r="1.5" /><circle cx="200" cy="100" r="1.5" /><circle cx="300" cy="100" r="1.5" /><circle cx="400" cy="100" r="1.5" />
+    <circle cx="100" cy="200" r="1.5" /><circle cx="200" cy="200" r="1.5" /><circle cx="300" cy="200" r="1.5" /><circle cx="400" cy="200" r="1.5" />
+    <circle cx="100" cy="300" r="1.5" /><circle cx="200" cy="300" r="1.5" /><circle cx="300" cy="300" r="1.5" /><circle cx="400" cy="300" r="1.5" />
+    <circle cx="100" cy="400" r="1.5" /><circle cx="200" cy="400" r="1.5" /><circle cx="300" cy="400" r="1.5" /><circle cx="400" cy="400" r="1.5" />
+    <circle cx="100" cy="500" r="1.5" /><circle cx="200" cy="500" r="1.5" /><circle cx="300" cy="500" r="1.5" /><circle cx="400" cy="500" r="1.5" />
   </g>
 
-  <!-- Wave 1: Flowing Orange-Amber Wave -->
-  <path d="M 900,640 C 1100,500 1250,560 1450,420 C 1650,280 1780,320 1920,220 L 1920,640 Z" fill="url(#warmGrad)" fill-opacity="0.06" />
+  <!-- Ambient Orange Glows (Golden Hour Effect) -->
+  <circle cx="1500" cy="300" r="400" fill="#FF8A3D" fill-opacity="0.12" filter="url(#orangeGlow)" />
+  <circle cx="1200" cy="480" r="250" fill="#FFB347" fill-opacity="0.08" filter="url(#orangeGlow)" />
+  <circle cx="850" cy="150" r="280" fill="#F6C667" fill-opacity="0.05" filter="url(#orangeGlow)" />
 
-  <!-- Wave 2: Deeper Coral Wave -->
-  <path d="M 1100,640 C 1300,530 1400,480 1600,380 C 1800,280 1850,330 1920,270 L 1920,640 Z" fill="url(#warmGrad)" fill-opacity="0.04" />
-
-  <!-- Wave 3: Subtle Cyan Wave -->
-  <path d="M 800,640 C 1050,520 1200,600 1380,480 C 1560,360 1720,440 1920,350 L 1920,640 Z" fill="#00e5ff" fill-opacity="0.02" />
-
-  <!-- Circuit Traces / Tech Connections (Right Side Background) -->
-  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1.5" fill="none">
-    <!-- Trace 1 -->
-    <path d="M 1150,250 L 1250,250 L 1300,300 L 1450,300 L 1480,270 L 1550,270" />
-    <circle cx="1150" cy="250" r="3" fill="#ffb300" fill-opacity="0.5" />
-    <circle cx="1550" cy="270" r="3" fill="#00e5ff" fill-opacity="0.5" />
-    
-    <!-- Trace 2 -->
-    <path d="M 1350,450 L 1420,380 L 1550,380 L 1600,430 L 1700,430" />
-    <circle cx="1350" cy="450" r="3" fill="#00e5ff" fill-opacity="0.5" />
-    <circle cx="1700" cy="430" r="3" fill="#ffb300" fill-opacity="0.5" />
-
-    <!-- Neural Network nodes -->
-    <g stroke="#ffb300" stroke-opacity="0.1" stroke-width="1">
-      <line x1="1620" y1="180" x2="1680" y2="130" />
-      <line x1="1680" y1="130" x2="1750" y2="170" />
-      <line x1="1750" y1="170" x2="1710" y2="240" />
-      <line x1="1710" y1="240" x2="1620" y2="180" />
-      <line x1="1620" y1="180" x2="1710" y2="240" />
-      <line x1="1680" y1="130" x2="1710" y2="240" />
-    </g>
-    <!-- Neural Node Dots -->
-    <circle cx="1620" cy="180" r="5" fill="#ffb300" fill-opacity="0.6" filter="url(#elementGlow)" />
-    <circle cx="1680" cy="130" r="4" fill="#ffffff" fill-opacity="0.8" />
-    <circle cx="1750" cy="170" r="6" fill="#f97316" fill-opacity="0.6" filter="url(#elementGlow)" />
-    <circle cx="1710" cy="240" r="4" fill="#ffb300" fill-opacity="0.6" />
+  <!-- Wavy shapes -->
+  <g fill="url(#warmGrad)" fill-opacity="0.08">
+    <path d="M 950,640 C 1150,480 1300,580 1520,380 C 1740,180 1850,220 1920,80 L 1920,640 Z" />
+    <path d="M 1150,640 C 1320,520 1450,460 1680,340 C 1850,220 1880,280 1920,160 L 1920,640 Z" fill-opacity="0.05" />
+    <path d="M 800,640 C 1080,500 1200,620 1420,440 C 1600,260 1780,380 1920,290 L 1920,640 Z" fill-opacity="0.03" />
   </g>
 
-  <!-- Glassmorphic Dashboard Showcase Container (Right) -->
-  <g transform="translate(1200, 140)">
-    <!-- Card Base -->
-    <rect width="600" height="360" rx="24" fill="#ffffff" fill-opacity="0.015" stroke="url(#borderGrad)" stroke-width="2" />
-    
-    <!-- Top Bar Mockup -->
-    <circle cx="30" cy="30" r="6" fill="#ff5f56" />
-    <circle cx="48" cy="30" r="6" fill="#ffbd2e" />
-    <circle cx="66" cy="30" r="6" fill="#27c93f" />
-    <text x="300" y="34" font-size="12" font-weight="600" fill="#475569" text-anchor="middle" letter-spacing="1">ARCHITECT.IO</text>
-    <line x1="0" y1="60" x2="600" y2="60" stroke="#1e293b" stroke-opacity="0.4" stroke-width="1.5" />
+  <!-- Connections -->
+  <g stroke="#FF8A3D" stroke-opacity="0.1" stroke-width="1.5" fill="none">
+    <line x1="1650" y1="180" x2="1750" y2="120" />
+    <line x1="1750" y1="120" x2="1820" y2="200" />
+    <line x1="1820" y1="200" x2="1720" y2="260" />
+    <line x1="1720" y1="260" x2="1650" y2="180" />
+    <line x1="1750" y1="120" x2="1720" y2="260" />
+    <circle cx="1650" cy="180" r="6" fill="#FF8A3D" fill-opacity="0.7" filter="url(#softBlur)" />
+    <circle cx="1750" cy="120" r="4" fill="#FFFFFF" fill-opacity="0.8" />
+    <circle cx="1820" cy="200" r="7" fill="#FFB347" fill-opacity="0.7" filter="url(#softBlur)" />
+    <circle cx="1720" cy="260" r="5" fill="#F6C667" fill-opacity="0.6" />
+  </g>
 
-    <!-- Code Block / System Flow Mockup inside Glass Card -->
-    <g transform="translate(40, 90)">
-      <!-- Cloud Architecture representation -->
-      <!-- Subtitle -->
-      <text x="0" y="20" font-size="14" font-weight="700" fill="#ffb300" letter-spacing="2">SYSTEM ORCHESTRATION</text>
-      
-      <!-- Network Nodes (SaaS Mockup) -->
-      <!-- DB Symbol -->
-      <g transform="translate(50, 90)" stroke="url(#goldTechGrad)" stroke-width="1.5" fill="none">
-        <path d="M 0,0 C 25,0 25,10 25,10 C 25,10 25,20 0,20 C -25,20 -25,10 -25,10 C -25,10 -25,0 0,0 Z" />
-        <path d="M -25,10 L -25,25 C -25,35 25,35 25,25 L 25,10" />
-        <path d="M -25,25 L -25,40 C -25,50 25,50 25,40 L 25,25" />
-        <text x="0" y="24" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle" stroke="none">DB</text>
-      </g>
+  <!-- Glassmorphic Dashboard Panel -->
+  <g transform="translate(1180, 150)">
+    <!-- Base Card -->
+    <rect width="600" height="340" rx="24" fill="url(#glassGrad)" stroke="url(#borderGrad)" stroke-width="2" />
+    <circle cx="35" cy="35" r="6" fill="#FF8A3D" fill-opacity="0.8" />
+    <circle cx="55" cy="35" r="6" fill="#FFB347" fill-opacity="0.6" />
+    <circle cx="75" cy="35" r="6" fill="#F6C667" fill-opacity="0.5" />
+    <text x="300" y="40" font-size="12" font-weight="700" fill="#FF8A3D" fill-opacity="0.5" text-anchor="middle" letter-spacing="1">PRASHANT.DEV</text>
+    <line x1="0" y1="65" x2="600" y2="65" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1.5" />
 
-      <!-- Cloud Symbol -->
-      <g transform="translate(230, 90)" stroke="url(#cyanTechGrad)" stroke-width="1.5" fill="none">
-        <path d="M -20,20 A 15,15 0 0,1 -10,-8 A 22,22 0 0,1 25,-12 A 18,18 0 0,1 38,18 A 12,12 0 0,1 30,30 L -15,30 A 12,12 0 0,1 -20,20 Z" />
-        <text x="10" y="16" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle" stroke="none">CLOUD</text>
-      </g>
+    <g transform="translate(40, 95)">
+      <text x="0" y="20" font-size="13" font-weight="700" fill="#FFB347" letter-spacing="1.5">ARCHITECTURE METRICS</text>
+      <path d="M 0,160 Q 60,110 120,130 T 240,80 T 360,110 T 480,50 T 520,60" fill="none" stroke="url(#warmGrad)" stroke-width="3" stroke-linecap="round" />
+      <path d="M 0,160 Q 60,110 120,130 T 240,80 T 360,110 T 480,50 T 520,60 L 520,180 L 0,180 Z" fill="url(#warmGrad)" fill-opacity="0.04" />
+      <circle cx="240" cy="80" r="5" fill="#FFFFFF" />
+      <circle cx="480" cy="50" r="5" fill="#FF8A3D" filter="url(#softBlur)" />
+      <line x1="0" y1="90" x2="520" y2="90" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
+      <line x1="0" y1="140" x2="520" y2="140" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
 
-      <!-- AI Brain Symbol -->
-      <g transform="translate(410, 90)" stroke="url(#goldTechGrad)" stroke-width="1.5" fill="none">
-        <!-- Circle Nodes -->
-        <circle cx="0" cy="15" r="15" />
-        <circle cx="-15" cy="-10" r="10" />
-        <circle cx="15" cy="-10" r="10" />
-        <line x1="-15" y1="-10" x2="0" y2="15" />
-        <line x1="15" y1="-10" x2="0" y2="15" />
-        <line x1="-15" y1="-10" x2="15" y2="-10" />
-        <text x="0" y="6" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle" stroke="none">AI</text>
-      </g>
-
-      <!-- Data flow lines connecting them -->
-      <g stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.5" fill="none" stroke-dasharray="4,4">
-        <path d="M 75,90 L 205,90" />
-        <path d="M 268,90 L 395,90" />
-      </g>
-      <!-- Flow arrows -->
-      <polygon points="145,87 153,90 145,93" fill="#00e5ff" fill-opacity="0.6" />
-      <polygon points="330,87 338,90 330,93" fill="#ffb300" fill-opacity="0.6" />
-
-      <!-- Code Line mockups -->
-      <rect x="0" y="180" width="200" height="8" rx="4" fill="#1e293b" fill-opacity="0.6" />
-      <rect x="0" y="200" width="340" height="8" rx="4" fill="#ffb300" fill-opacity="0.2" />
-      <rect x="0" y="220" width="280" height="8" rx="4" fill="#00bcd4" fill-opacity="0.15" />
-      <rect x="0" y="240" width="150" height="8" rx="4" fill="#1e293b" fill-opacity="0.6" />
+      <rect x="0" y="195" width="90" height="24" rx="6" fill="#1A2438" stroke="#FF8A3D" stroke-opacity="0.3" stroke-width="1" />
+      <text x="45" y="211" font-size="10" font-weight="700" fill="#FF8A3D" text-anchor="middle">99.9% uptime</text>
+      <rect x="105" y="195" width="100" height="24" rx="6" fill="#1A2438" stroke="#FFB347" stroke-opacity="0.3" stroke-width="1" />
+      <text x="155" y="211" font-size="10" font-weight="700" fill="#FFB347" text-anchor="middle">500+ mentored</text>
     </g>
   </g>
 
-  <!-- Flowing Floating Particle Lights (Bokeh) -->
-  <circle cx="1150" cy="480" r="6" fill="#ffb300" fill-opacity="0.3" filter="url(#elementGlow)" />
-  <circle cx="1800" cy="400" r="10" fill="#ff8f00" fill-opacity="0.2" filter="url(#elementGlow)" />
-  <circle cx="1400" cy="180" r="8" fill="#00e5ff" fill-opacity="0.25" filter="url(#elementGlow)" />
-  <circle cx="1050" cy="200" r="4" fill="#ffffff" fill-opacity="0.4" />
-  <circle cx="1650" cy="480" r="7" fill="#ffffff" fill-opacity="0.3" />
-
-  <!-- Left Content: Typography Area -->
-  <g transform="translate(140, 0)">
-    <!-- Top Minimal Badge -->
+  <!-- Left Content -->
+  <g transform="translate(120, 0)">
     <g transform="translate(0, 160)">
-      <rect width="180" height="32" rx="16" fill="#1e293b" fill-opacity="0.5" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.4" />
-      <circle cx="20" cy="16" r="5" fill="#fbbf24" filter="url(#elementGlow)" />
-      <text x="36" y="20" font-size="12" font-weight="700" fill="#fef08a" letter-spacing="1.5">PORTFOLIO HEADER</text>
+      <rect width="180" height="32" rx="16" fill="#1A2438" stroke="#FF8A3D" stroke-width="1" stroke-opacity="0.3" />
+      <circle cx="20" cy="16" r="5" fill="#FF8A3D" filter="url(#softBlur)" />
+      <text x="36" y="20" font-size="11" font-weight="700" fill="#FFB347" letter-spacing="1.5">HELLO WORLD</text>
     </g>
-
-    <!-- Name: Prashant Kumar -->
-    <text x="0" y="280" font-size="82" font-weight="800" fill="url(#textGrad)" letter-spacing="-1.5">Prashant Kumar</text>
-    
-    <!-- Subtitles / Roles with glowing warm/blue color scheme -->
-    <text x="0" y="360" font-size="30" font-weight="700" fill="url(#subtitleGrad)" letter-spacing="0.5">
+    <text x="0" y="280" font-size="80" font-weight="800" fill="url(#textGrad)" letter-spacing="-1.5">Prashant Kumar</text>
+    <text x="0" y="360" font-size="28" font-weight="700" fill="url(#warmGrad)" letter-spacing="0.5">
       Full Stack Developer <tspan fill="#ffffff" font-weight="300">|</tspan> Corporate Trainer <tspan fill="#ffffff" font-weight="300">|</tspan> Cloud &amp; AI Enthusiast
     </text>
-
-    <!-- Glowing accent bar -->
-    <rect x="0" y="390" width="380" height="5" rx="2.5" fill="url(#warmGrad)" />
-
-    <!-- Description / Mission Statement -->
-    <text x="0" y="450" font-size="20" font-weight="500" fill="#e2e8f0" letter-spacing="0.2">
-      Building scalable software <tspan fill="#ffb300" font-weight="700">•</tspan> Teaching technology <tspan fill="#00bcd4" font-weight="700">•</tspan> Solving real-world problems
+    <rect x="0" y="390" width="400" height="4" rx="2" fill="url(#warmGrad)" />
+    <text x="0" y="445" font-size="20" font-weight="500" fill="#D8DEE9" letter-spacing="0.2">
+      Building scalable software <tspan fill="#FF8A3D" font-weight="700">•</tspan> Teaching technology <tspan fill="#FFB347" font-weight="700">•</tspan> Solving real-world problems
     </text>
   </g>
 </svg>

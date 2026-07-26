@@ -1,66 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#0E1525; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
   <defs>
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1120" />
-      <stop offset="100%" stop-color="#060913" />
+      <stop offset="0%" stop-color="#1A2438" />
+      <stop offset="100%" stop-color="#0E1525" />
     </linearGradient>
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6"/>
-      <stop offset="30%" stop-color="#1e293b" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="0%" stop-color="#FF8A3D" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFB347" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#F6C667" stop-opacity="0.2"/>
     </linearGradient>
-    <filter id="subtleGlow">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <filter id="blurGlow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
   <!-- Card Background -->
-  <rect x="1" y="1" width="398" height="218" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+  <rect x="1" y="1" width="398" height="218" rx="24" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
 
-  <!-- Ambient Glow in Top Right -->
-  <circle cx="360" cy="40" r="30" fill="#06b6d4" fill-opacity="0.08" filter="url(#subtleGlow)" />
+  <!-- Subtle glow in top right -->
+  <circle cx="360" cy="40" r="25" fill="#F6C667" fill-opacity="0.06" filter="url(#blurGlow)" />
 
-  <!-- Project Icon (Shopping Cart) -->
-  <g transform="translate(24, 24)">
-    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" fill="#06b6d4" />
+  <!-- Project Icon (Shopping Cart / Compario) -->
+  <g transform="translate(24, 24)" fill="#FF8A3D">
+    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
   </g>
 
-  <!-- External Link Icon (Top Right) -->
-  <g transform="translate(352, 24)">
-    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="#475569" />
+  <!-- Status indicator -->
+  <g transform="translate(348, 24)">
+    <rect x="-80" y="0" width="85" height="20" rx="10" fill="#111827" stroke="#F6C667" stroke-opacity="0.2" />
+    <circle cx="-70" cy="10" r="3.5" fill="#F6C667" />
+    <text x="-60" y="13" font-size="9" font-weight="700" fill="#D8DEE9">SHOWCASE</text>
   </g>
 
   <!-- Title -->
-  <text x="24" y="80" font-size="18" font-weight="700" fill="#ffffff">Compario Ecommerce</text>
+  <text x="24" y="80" font-size="18" font-weight="700" fill="#FFFFFF">Compario Ecommerce</text>
 
   <!-- Description -->
-  <text x="24" y="106" font-size="12" font-weight="400" fill="#94a3b8" width="352">
-    <tspan x="24" dy="0">A modern e-commerce web application featuring high-fidelity</tspan>
-    <tspan x="24" dy="16">interactions, dynamic product filtering, and responsive design.</tspan>
+  <text x="24" y="105" font-size="12" font-weight="400" fill="#D8DEE9" width="352">
+    <tspan x="24" dy="0">Modern product listings interface showcasing dynamic</tspan>
+    <tspan x="24" dy="16">filtering options and fluid custom layout animations.</tspan>
   </text>
 
   <!-- Features list -->
-  <text x="24" y="146" font-size="11" font-weight="600" fill="#99f6e4" letter-spacing="0.5">
-    RESPONSIVE DESIGN • MODERN UI • FLUID ANIMATIONS
-  </text>
+  <text x="24" y="146" font-size="10" font-weight="700" fill="#FFB347" letter-spacing="0.5">ECOMMERCE FRONTEND • RESPONSIVE • ANIMATIONS</text>
 
-  <!-- Tech Stack Badges -->
-  <g transform="translate(24, 168)">
-    <!-- Tag 1: React -->
-    <rect x="0" y="0" width="58" height="22" rx="6" fill="#1e1b4b" stroke="#312e81" stroke-width="1" />
-    <text x="29" y="14" font-size="10" font-weight="600" fill="#818cf8" text-anchor="middle">React</text>
+  <!-- Tech pills -->
+  <g transform="translate(24, 166)">
+    <rect x="0" y="0" width="58" height="24" rx="8" fill="#2A1B15" stroke="#FF8A3D" stroke-opacity="0.3" stroke-width="1" />
+    <text x="29" y="15" font-size="10" font-weight="700" fill="#FF8A3D" text-anchor="middle">React</text>
+    
+    <rect x="66" y="0" width="88" height="24" rx="8" fill="#2A2115" stroke="#FFB347" stroke-opacity="0.3" stroke-width="1" />
+    <text x="110" y="15" font-size="10" font-weight="700" fill="#FFB347" text-anchor="middle">Tailwind CSS</text>
 
-    <!-- Tag 2: Tailwind -->
-    <rect x="64" y="0" width="90" height="22" rx="6" fill="#083344" stroke="#155e75" stroke-width="1" />
-    <text x="109" y="14" font-size="10" font-weight="600" fill="#22d3ee" text-anchor="middle">Tailwind CSS</text>
+    <rect x="162" y="0" width="54" height="24" rx="8" fill="#2A2515" stroke="#F6C667" stroke-opacity="0.3" stroke-width="1" />
+    <text x="189" y="15" font-size="10" font-weight="700" fill="#F6C667" text-anchor="middle">CSS3</text>
 
-    <!-- Tag 3: CSS3 -->
-    <rect x="160" y="0" width="54" height="22" rx="6" fill="#172554" stroke="#1e3a8a" stroke-width="1" />
-    <text x="187" y="14" font-size="10" font-weight="600" fill="#60a5fa" text-anchor="middle">CSS3</text>
-
-    <!-- Tag 4: Animations -->
-    <rect x="220" y="0" width="86" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
-    <text x="263" y="14" font-size="10" font-weight="600" fill="#cbd5e1" text-anchor="middle">Animations</text>
+    <rect x="224" y="0" width="86" height="24" rx="8" fill="#212936" stroke="#475569" stroke-opacity="0.3" stroke-width="1" />
+    <text x="267" y="15" font-size="10" font-weight="700" fill="#E5E7EB" text-anchor="middle">Animations</text>
   </g>
 </svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 60" width="850" height="60" fill="none">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A3D" />
+      <stop offset="50%" stop-color="#FFB347" />
+      <stop offset="100%" stop-color="#F6C667" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A3D" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FF8A3D" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M22,18 L38,18 L30,38 Z" stroke="#FF8A3D" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  </g>
+  <text x="56" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="url(#headerGrad)" letter-spacing="2">TECHNICAL ECOSYSTEM</text>
+  <line x1="330" y1="32" x2="820" y2="32" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="6,4" />
+</svg>
