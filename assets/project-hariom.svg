@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#1e293b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect x="1" y="1" width="398" height="218" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <!-- Ambient Glow in Top Right -->
+  <circle cx="360" cy="40" r="30" fill="#f59e0b" fill-opacity="0.08" filter="url(#subtleGlow)" />
+
+  <!-- Project Icon (Calendar/Booking) -->
+  <g transform="translate(24, 24)">
+    <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z" fill="#f59e0b" />
+  </g>
+
+  <!-- External Link Icon (Top Right) -->
+  <g transform="translate(352, 24)">
+    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="#475569" />
+  </g>
+
+  <!-- Title -->
+  <text x="24" y="80" font-size="18" font-weight="700" fill="#ffffff">Hariom Trust Booking Platform</text>
+
+  <!-- Description -->
+  <text x="24" y="106" font-size="12" font-weight="400" fill="#94a3b8" width="352">
+    <tspan x="24" dy="0">Temple booking and donation management system designed to</tspan>
+    <tspan x="24" dy="16">streamline operations, visits, and generate receipts securely.</tspan>
+  </text>
+
+  <!-- Features list -->
+  <text x="24" y="146" font-size="11" font-weight="600" fill="#fde68a" letter-spacing="0.5">
+    DONATION MANAGEMENT • TEMPLE BOOKING • MODERN UI
+  </text>
+
+  <!-- Tech Stack Badges -->
+  <g transform="translate(24, 168)">
+    <!-- Tag 1: React -->
+    <rect x="0" y="0" width="58" height="22" rx="6" fill="#1e1b4b" stroke="#312e81" stroke-width="1" />
+    <text x="29" y="14" font-size="10" font-weight="600" fill="#818cf8" text-anchor="middle">React</text>
+
+    <!-- Tag 2: PHP -->
+    <rect x="64" y="0" width="50" height="22" rx="6" fill="#2e1065" stroke="#4c1d95" stroke-width="1" />
+    <text x="89" y="14" font-size="10" font-weight="600" fill="#c084fc" text-anchor="middle">PHP</text>
+
+    <!-- Tag 3: MySQL -->
+    <rect x="120" y="0" width="60" height="22" rx="6" fill="#062f4f" stroke="#0b3c5d" stroke-width="1" />
+    <text x="150" y="14" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">MySQL</text>
+
+    <!-- Tag 4: Bootstrap -->
+    <rect x="186" y="0" width="80" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="226" y="14" font-size="10" font-weight="600" fill="#cbd5e1" text-anchor="middle">Bootstrap</text>
+  </g>
+</svg>

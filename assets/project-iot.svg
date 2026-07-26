@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#1e293b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect x="1" y="1" width="398" height="218" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" />
+
+  <!-- Ambient Glow in Top Right -->
+  <circle cx="360" cy="40" r="30" fill="#10b981" fill-opacity="0.08" filter="url(#subtleGlow)" />
+
+  <!-- Project Icon (IEEE Publication / Research Paper) -->
+  <g transform="translate(24, 24)">
+    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" fill="#10b981" />
+  </g>
+
+  <!-- External Link Icon (Top Right) -->
+  <g transform="translate(352, 24)">
+    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" fill="#475569" />
+  </g>
+
+  <!-- Title -->
+  <text x="24" y="80" font-size="18" font-weight="700" fill="#ffffff">IoT Driven Healthcare System</text>
+
+  <!-- Description -->
+  <text x="24" y="106" font-size="12" font-weight="400" fill="#94a3b8" width="352">
+    <tspan x="24" dy="0">IEEE research publication outlining a secure microservices</tspan>
+    <tspan x="24" dy="16">architecture for real-time patient health monitoring via cloud.</tspan>
+  </text>
+
+  <!-- Features list -->
+  <text x="24" y="146" font-size="11" font-weight="600" fill="#a7f3d0" letter-spacing="0.5">
+    IEEE RESEARCH • MICROSERVICES • CLOUD COMPUTING
+  </text>
+
+  <!-- Tech Stack Badges -->
+  <g transform="translate(24, 168)">
+    <!-- Tag 1: Python -->
+    <rect x="0" y="0" width="64" height="22" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="32" y="14" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">Python</text>
+
+    <!-- Tag 2: Java -->
+    <rect x="70" y="0" width="54" height="22" rx="6" fill="#431407" stroke="#7c2d12" stroke-width="1" />
+    <text x="97" y="14" font-size="10" font-weight="600" fill="#fb923c" text-anchor="middle">Java</text>
+
+    <!-- Tag 3: AWS Cloud -->
+    <rect x="130" y="0" width="84" height="22" rx="6" fill="#422006" stroke="#713f12" stroke-width="1" />
+    <text x="172" y="14" font-size="10" font-weight="600" fill="#fbbf24" text-anchor="middle">AWS Cloud</text>
+
+    <!-- Tag 4: Docker -->
+    <rect x="220" y="0" width="64" height="22" rx="6" fill="#0c4a6e" stroke="#0369a1" stroke-width="1" />
+    <text x="252" y="14" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">Docker</text>
+  </g>
+</svg>
