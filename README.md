@@ -135,32 +135,23 @@ As a **Corporate Trainer**, I translate complex software engineering architectur
 <!-- Featured Projects Section -->
 ### 📂 Featured Software Engineering
 
-<table border="0" align="center" width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/prashantkumar7906/library-management-system">
-        <img src="assets/project-lms.svg" alt="Library Management System" width="100%" />
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/prashantkumar7906/hariom-trust-booking">
-        <img src="assets/project-hariom.svg" alt="Hariom Trust Booking Platform" width="100%" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/prashantkumar7906/compario">
-        <img src="assets/project-compario.svg" alt="Compario Ecommerce" width="100%" />
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/prashantkumar7906/xhaudio">
-        <img src="assets/project-xhaudio.svg" alt="XHAudio Player" width="100%" />
-      </a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://github.com/prashantkumar7906/library-management-system">
+    <img src="assets/project-lms.svg" alt="Library Management System" width="415" style="max-width: 100%;" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/prashantkumar7906/hariom-trust-booking">
+    <img src="assets/project-hariom.svg" alt="Hariom Trust Booking Platform" width="415" style="max-width: 100%;" />
+  </a>
+  <br /><br />
+  <a href="https://github.com/prashantkumar7906/compario">
+    <img src="assets/project-compario.svg" alt="Compario Ecommerce" width="415" style="max-width: 100%;" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/prashantkumar7906/xhaudio">
+    <img src="assets/project-xhaudio.svg" alt="XHAudio Player" width="415" style="max-width: 100%;" />
+  </a>
+</div>
 
 <br />
 
@@ -232,34 +223,37 @@ As a **Corporate Trainer**, I translate complex software engineering architectur
 
 <br />
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td valign="top" width="50%" align="center">
-      <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img src="https://github-readme-stats.vercel.app/api?username=prashantkumar7906&show_icons=true&hide_border=true&title_color=818cf8&icon_color=a855f7&text_color=94a3b8&bg_color=0d1117&ring_color=a855f7" alt="Prashant's GitHub Stats" width="90%" />
-      </a>
-    </td>
-    <td valign="top" width="50%" align="center">
-      <a href="https://github.com/anuraghazra/github-readme-stats">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prashantkumar7906&layout=compact&hide_border=true&title_color=818cf8&text_color=94a3b8&bg_color=0d1117" alt="Prashant's Top Languages" width="90%" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" width="100%">
-      <br />
-      <a href="https://github.com/danielcranney/readme-play">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=prashantkumar7906&background=0d1117&border=00000000&hide_border=true&stroke=94a3b8&ring=818cf8&fire=ec4899&currPlay=a855f7" alt="Prashant's Streak Stats" width="100%" />
-      </a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=prashantkumar7906&show_icons=true&hide_border=true&title_color=818cf8&icon_color=a855f7&text_color=94a3b8&bg_color=0d1117&ring_color=a855f7" alt="Prashant's GitHub Stats" width="415" style="max-width: 100%;" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prashantkumar7906&layout=compact&hide_border=true&title_color=818cf8&text_color=94a3b8&bg_color=0d1117" alt="Prashant's Top Languages" width="415" style="max-width: 100%;" />
+  </a>
+  <br /><br />
+  <a href="https://github.com/danielcranney/readme-play">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=prashantkumar7906&background=0d1117&border=00000000&hide_border=true&stroke=94a3b8&ring=818cf8&fire=ec4899&currPlay=a855f7" alt="Prashant's Streak Stats" width="840" style="max-width: 100%;" />
+  </a>
+</div>
+
+<br />
+
+<div align="center">
+  <!-- Contribution Snake Game -->
+  <h4>👾 Contribution Snake</h4>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prashantkumar7906/prashantkumar7906/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/prashantkumar7906/prashantkumar7906/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/prashantkumar7906/prashantkumar7906/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
+</div>
 
 <br />
 
 <div align="center">
   <!-- Activity Graph -->
-  <h4>📈 Contribution Activity</h4>
+  <h4>📈 Weekly Activity Graph</h4>
   <a href="https://github.com/ashutoshgiga/github-readme-activity-graph">
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=prashantkumar7906&bg_color=0d1117&color=818cf8&line=a855f7&point=ffffff&area=true&hide_border=true" alt="Prashant's Activity Graph" width="100%" />
   </a>
