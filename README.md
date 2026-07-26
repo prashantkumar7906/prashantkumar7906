@@ -418,29 +418,10 @@
 
 <br />
 
-<div align="center">
-  <!-- Profile Trophy Widget (Themed to Dark Dracula/Cohesive Warm Tone) -->
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=prashantkumar7906&theme=dracula&no-bg=true&margin-w=15&column=5" alt="GitHub Trophies" />
-  </a>
-</div>
-
-<br />
-
-<!-- Balanced GitHub Stats Layout -->
-<div align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api?username=prashantkumar7906&show_icons=true&hide_border=true&title_color=ff8a3d&icon_color=f6c667&text_color=d8dee9&bg_color=0e1525&ring_color=ff8a3d" alt="Prashant's GitHub Stats" width="415" style="max-width: 100%;" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prashantkumar7906&layout=compact&hide_border=true&title_color=ff8a3d&text_color=d8dee9&bg_color=0e1525" alt="Prashant's Top Languages" width="415" style="max-width: 100%;" />
-  </a>
-  <br /><br />
-  <a href="https://github.com/danielcranney/readme-play">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=prashantkumar7906&background=0e1525&border=00000000&hide_border=true&stroke=d8dee9&ring=ff8a3d&fire=ff8a3d&currPlay=f6c667" alt="Prashant's Streak Stats" width="840" style="max-width: 100%;" />
-  </a>
-</div>
+<!--
+  GitHub Trophies, Stats, Languages, and Streak widgets have been removed 
+  to maintain a clean and reliable page load without broken image placeholders.
+-->
 
 <br />
 
