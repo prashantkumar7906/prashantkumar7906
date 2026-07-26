@@ -33,6 +33,28 @@
 
   <br /><br />
 
+  <!-- Website-style Navigation Bar -->
+  <table border="0" cellpadding="0" cellspacing="0" style="background:#1A2438; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 8px 24px; margin: 8px auto;">
+    <tr>
+      <td align="center">
+        <strong>
+          <a href="#-introduction" style="color:#FF8A3D; text-decoration:none; font-size:12px;">Intro</a> &nbsp;&bull;&nbsp;
+          <a href="#-about-me" style="color:#D8DEE9; text-decoration:none; font-size:12px;">About</a> &nbsp;&bull;&nbsp;
+          <a href="#-current-focus" style="color:#D8DEE9; text-decoration:none; font-size:12px;">Focus</a> &nbsp;&bull;&nbsp;
+          <a href="#-technical-ecosystem" style="color:#D8DEE9; text-decoration:none; font-size:12px;">Skills</a> &nbsp;&bull;&nbsp;
+          <a href="#-featured-projects" style="color:#D8DEE9; text-decoration:none; font-size:12px;">Projects</a> &nbsp;&bull;&nbsp;
+          <a href="#-research-publication" style="color:#D8DEE9; text-decoration:none; font-size:12px;">Research</a> &nbsp;&bull;&nbsp;
+          <a href="#-professional-experience" style="color:#D8DEE9; text-decoration:none; font-size:12px;">Experience</a> &nbsp;&bull;&nbsp;
+          <a href="#-professional-credentials" style="color:#D8DEE9; text-decoration:none; font-size:12px;">Credentials</a> &nbsp;&bull;&nbsp;
+          <a href="#-metrics--analytics" style="color:#D8DEE9; text-decoration:none; font-size:12px;">Metrics</a> &nbsp;&bull;&nbsp;
+          <a href="#-connect--collaborate" style="color:#FFB347; text-decoration:none; font-size:12px;">Connect</a>
+        </strong>
+      </td>
+    </tr>
+  </table>
+
+  <br />
+
   <!-- Wave Separator -->
   <img src="assets/separator.svg" alt="Separator" width="100%" />
 </div>
@@ -44,14 +66,22 @@
   <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&weight=700&size=24&duration=3000&pause=1000&color=FF8A3D&center=true&vCenter=true&width=600&height=50&lines=Full+Stack+Developer;Corporate+Technical+Trainer;Cloud+%26+AI+Enthusiast" alt="Typing SVG" />
 </h2>
 
-<p align="center" style="font-size: 16px; color: #D8DEE9; max-width: 720px; margin: 0 auto; line-height: 1.7;">
-  A product-minded software developer and systems training lead based in India. Focused on compiling highly optimized full-stack applications, containerized environments, and cloud architecture while training enterprise engineering teams in cutting-edge tech stacks.
-</p>
+<!-- Section: Introduction -->
+<div id="-introduction" align="center" style="margin-top: 10px;">
+  <p style="font-size: 16px; color: #D8DEE9; max-width: 740px; margin: 0 auto; line-height: 1.7; font-weight: 500;">
+    "Design with intent, build with discipline, and scale with confidence." 
+  </p>
+  <p style="font-size: 14px; color: #94A3B8; max-width: 700px; margin: 10px auto 0 auto; line-height: 1.6;">
+    Bridging the gap between robust industry execution and academic systems design. I specialize in cloud-native microservices, relational databases, and corporate engineering curriculum designs to upskill developer workforces.
+  </p>
+</div>
 
 <br /><br />
 
 <!-- Section: About Me -->
-<img src="assets/header-about.svg" alt="About Me" width="100%" />
+<div id="-about-me">
+  <img src="assets/header-about.svg" alt="About Me" width="100%" />
+</div>
 
 <br />
 
@@ -60,7 +90,7 @@
     <td width="50%" valign="top" style="background:#0E1525; border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 20px;">
       <h4 style="color: #FF8A3D; margin-top:0;">🚀 Core Capabilities</h4>
       <p style="color: #D8DEE9; font-size:13px; line-height:1.6;">
-        Expertise in modern frontend and backend architectures. Competent in building low-latency REST/GraphQL APIs, interactive dashboards, and scalable database schemas.
+        Broad coverage across frontend layouts and backend routing architectures. Designing structured APIs, managing indexing optimizations on databases, and deploying container configurations.
       </p>
       <ul style="color: #D8DEE9; font-size:13px; line-height:1.6; padding-left:20px;">
         <li>Java, Spring Boot, Laravel, Node.js</li>
@@ -82,50 +112,12 @@
   </tr>
 </table>
 
-<br />
-
-<details style="background:#1A2438; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 12px 16px;">
-  <summary style="color: #FF8A3D; font-weight:700; cursor:pointer;">💼 View Corporate Trainer &amp; Pedagogical Metrics</summary>
-  <br />
-  <p style="color: #D8DEE9; font-size: 13px; line-height: 1.6; margin:0 0 12px 0;">
-    As a <strong>Corporate Trainer</strong>, I translate complex enterprise infrastructure concepts into accessible workflows:
-  </p>
-  <ul style="color: #D8DEE9; font-size: 13px; line-height: 1.6; padding-left:20px; margin:0 0 16px 0;">
-    <li><strong>Curriculum Engineering:</strong> Designed end-to-end cloud and microservice bootcamps matching modern enterprise specifications.</li>
-    <li><strong>Sandbox Labs:</strong> Built localized developer tooling environments utilizing Docker to simulate production-scale database failover states.</li>
-  </ul>
-  <table width="100%" style="font-size:12px; color:#D8DEE9;">
-    <thead>
-      <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-        <th align="left" style="color:#FFB347; padding:6px 0;">Focus Area</th>
-        <th align="left" style="color:#FFB347; padding:6px 0;">Subject Details</th>
-        <th align="left" style="color:#FFB347; padding:6px 0;">Key Outcomes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="padding:6px 0;"><strong>Backend Development</strong></td>
-        <td>Laravel API architectures, Spring Boot, MySQL indexing</td>
-        <td>Successful production readiness evaluations</td>
-      </tr>
-      <tr style="border-top:1px solid rgba(255,255,255,0.05);">
-        <td style="padding:6px 0;"><strong>Frontend Frameworks</strong></td>
-        <td>React context states, Next.js routing, Tailwind setups</td>
-        <td>Component modularity &amp; SEO best practices</td>
-      </tr>
-      <tr style="border-top:1px solid rgba(255,255,255,0.05);">
-        <td style="padding:6px 0;"><strong>Cloud &amp; DevOps</strong></td>
-        <td>AWS Academy deployments, Docker container isolation</td>
-        <td>Standardized automated CI/CD pipeline runs</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
-
 <br /><br />
 
 <!-- Section: Current Focus -->
-<img src="assets/header-focus.svg" alt="Current Focus" width="100%" />
+<div id="-current-focus">
+  <img src="assets/header-focus.svg" alt="Current Focus" width="100%" />
+</div>
 
 <br />
 
@@ -157,7 +149,9 @@
 <br /><br />
 
 <!-- Section: Tech Stack -->
-<img src="assets/header-tech.svg" alt="Technical Ecosystem" width="100%" />
+<div id="-technical-ecosystem">
+  <img src="assets/header-tech.svg" alt="Technical Ecosystem" width="100%" />
+</div>
 
 <br />
 
@@ -219,6 +213,13 @@
         <img src="https://img.shields.io/badge/VS_Code-%231A2438?style=for-the-badge&logo=visualstudiocode&logoColor=%23FFB347" />
       </td>
     </tr>
+    <tr style="border-top: 1px solid rgba(255,255,255,0.05);">
+      <td style="color:#FF8A3D; font-weight:700; padding:10px 0;">Operating Systems</td>
+      <td style="padding:10px 0;">
+        <img src="https://img.shields.io/badge/Linux-%231A2438?style=for-the-badge&logo=linux&logoColor=%23FF8A3D" />
+        <img src="https://img.shields.io/badge/Windows-%231A2438?style=for-the-badge&logo=windows&logoColor=%23FFB347" />
+      </td>
+    </tr>
   </table>
 </div>
 
@@ -229,7 +230,9 @@
 <br /><br />
 
 <!-- Section: Featured Projects -->
-<img src="assets/header-projects.svg" alt="Featured Projects" width="100%" />
+<div id="-featured-projects">
+  <img src="assets/header-projects.svg" alt="Featured Projects" width="100%" />
+</div>
 
 <br />
 
@@ -259,7 +262,9 @@
 <br /><br />
 
 <!-- Section: Research Publication -->
-<img src="assets/header-research.svg" alt="Research Publication" width="100%" />
+<div id="-research-publication">
+  <img src="assets/header-research.svg" alt="Research Publication" width="100%" />
+</div>
 
 <br />
 
@@ -285,8 +290,79 @@
 </div>
 <br /><br />
 
+<!-- Section: Professional Experience -->
+<div id="-professional-experience">
+  <img src="assets/header-experience.svg" alt="Professional Experience" width="100%" />
+</div>
+
+<br />
+
+<div style="background:#0E1525; border-radius:24px; border:1px solid rgba(255,255,255,0.05); padding: 24px;">
+  <!-- Experience Item 1 -->
+  <div style="margin-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left">
+          <h4 style="color:#FFFFFF; margin:0; font-size:16px;">Corporate Technical Trainer</h4>
+          <p style="color:#FF8A3D; margin:4px 0 0 0; font-size:12px; font-weight:700; letter-spacing:0.5px;">SYSTEM ARCHITECTURES &amp; CLOUD DEPLOYMENT LEAD</p>
+        </td>
+        <td align="right" valign="top">
+          <span style="background:#1A2438; color:#D8DEE9; padding:4px 12px; border-radius:10px; font-size:11px; font-weight:700; border: 1px solid rgba(255,255,255,0.05);">PRESENT</span>
+        </td>
+      </tr>
+    </table>
+    <p style="color:#D8DEE9; font-size:13px; line-height:1.6; margin:12px 0 0 0;">
+      Deliver end-to-end software curriculum designs for developer onboarding tracks, specializing in system designs, database optimization indices, and cloud virtualization structures. Mentored 500+ corporate software associates.
+    </p>
+  </div>
+
+  <!-- Experience Item 2 -->
+  <div style="margin-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left">
+          <h4 style="color:#FFFFFF; margin:0; font-size:16px;">Full Stack Engineer</h4>
+          <p style="color:#FFB347; margin:4px 0 0 0; font-size:12px; font-weight:700; letter-spacing:0.5px;">WEB ECOSYSTEM ARCHITECT</p>
+        </td>
+        <td align="right" valign="top">
+          <span style="background:#1A2438; color:#D8DEE9; padding:4px 12px; border-radius:10px; font-size:11px; font-weight:700; border: 1px solid rgba(255,255,255,0.05);">ONGOING CONSULTING</span>
+        </td>
+      </tr>
+    </table>
+    <p style="color:#D8DEE9; font-size:13px; line-height:1.6; margin:12px 0 0 0;">
+      Consult with business clients on responsive web development projects. Architect reliable Laravel backends, complex React templates, and database storage schemas (MongoDB, MySQL) for optimized lookup queries.
+    </p>
+  </div>
+
+  <!-- Experience Item 3 -->
+  <div style="margin-bottom: 0;">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left">
+          <h4 style="color:#FFFFFF; margin:0; font-size:16px;">Research Associate</h4>
+          <p style="color:#F6C667; margin:4px 0 0 0; font-size:12px; font-weight:700; letter-spacing:0.5px;">IOT CLOUD SYSTEMS RESEARCH</p>
+        </td>
+        <td align="right" valign="top">
+          <span style="background:#1A2438; color:#D8DEE9; padding:4px 12px; border-radius:10px; font-size:11px; font-weight:700; border: 1px solid rgba(255,255,255,0.05);">IEEE PUBLISHED</span>
+        </td>
+      </tr>
+    </table>
+    <p style="color:#D8DEE9; font-size:13px; line-height:1.6; margin:12px 0 0 0;">
+      Co-authored and designed research implementations on IoT driven telehealth networks. Developed proof-of-concept Docker architectures executing stream telemetry transfers to cloud endpoints.
+    </p>
+  </div>
+</div>
+
+<br /><br />
+<div align="center">
+  <img src="assets/separator.svg" alt="Separator" width="100%" />
+</div>
+<br /><br />
+
 <!-- Section: Professional Credentials -->
-<img src="assets/header-certifications.svg" alt="Professional Credentials" width="100%" />
+<div id="-professional-credentials">
+  <img src="assets/header-certifications.svg" alt="Professional Credentials" width="100%" />
+</div>
 
 <br />
 
@@ -336,7 +412,9 @@
 <br /><br />
 
 <!-- Section: Metrics & Analytics -->
-<img src="assets/header-stats.svg" alt="Metrics &amp; Analytics" width="100%" />
+<div id="-metrics--analytics">
+  <img src="assets/header-stats.svg" alt="Metrics &amp; Analytics" width="100%" />
+</div>
 
 <br />
 
@@ -393,7 +471,7 @@
 </div>
 <br /><br />
 
-<!-- Section: Current Goals -->
+<!-- Section: Goals -->
 <img src="assets/header-goals.svg" alt="Current Goals" width="100%" />
 
 <br />
@@ -414,7 +492,9 @@
 <br /><br />
 
 <!-- Section: Connect & Collaborate -->
-<img src="assets/header-connect.svg" alt="Connect &amp; Collaborate" width="100%" />
+<div id="-connect--collaborate">
+  <img src="assets/header-connect.svg" alt="Connect &amp; Collaborate" width="100%" />
+</div>
 
 <br />
 
